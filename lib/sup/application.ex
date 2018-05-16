@@ -4,7 +4,9 @@ defmodule Sup.Application do
   use Application
 
   def start(_type, _args) do
-    children = []
+    children = [
+      Sup.Scheduler
+    ]
 
     opts = [strategy: :one_for_one, name: Sup.Supervisor]
     Supervisor.start_link(children, opts)
