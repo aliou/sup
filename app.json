@@ -1,0 +1,5 @@
+{
+  "buildpacks": [
+    "https://github.com/HashNuke/heroku-buildpack-elixir.git"
+  ]
+}
