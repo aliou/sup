@@ -20,6 +20,10 @@ defmodule Sup.MixProject do
   end
 
   defp deps do
-    []
+    [
+      # Web stuff
+      {:plug, "~> 1.5.0"},
+      {:cowboy, "~> 2.4.0"}
+    ]
   end
 end
